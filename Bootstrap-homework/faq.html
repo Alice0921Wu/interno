@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap作業練習用-faq常見問題</title>
+    <!-- bootstrap cdn css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="bg-white">
+    <!-- 導覽 start-->
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark bg-gradient fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html"><img src="img-cake/cake-logo.jpg" alt="" class="w-25 pe-2">甜心蛋糕</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 list-style-no">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="about.html">關於我們</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    產品列表
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="product-list.html">產品列表1</a></li>
+                    <li><a class="dropdown-item" href="product-list.html">產品列表2</a></li>
+                    <li><a class="dropdown-item" href="product-list.html">產品列表3</a></li>
+                    <li><a class="dropdown-item" href="product-list.html">產品列表4</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="store.html">門市店舖</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="faq.html">常見問題</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="contact.html">聯絡我們</a>
+                </li>
+              </ul>
+              
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success text-white" type="submit">Search</button>
+              </form>
+              <!-- 跳出購物車 -->
+              <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#cartModal">
+                <i class="bi bi-cart cart fs-3 ms-2"></i>
+              </a>
+              <!-- 跳出登入會員 -->
+              <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="bi bi-person person fs-3" ></i>
+              </a>
+              
+              
+            </div>
+          </div>
+    </nav>
+    <!-- 導覽 end-->
+    
+    <div class="container my-5 py-5">
+      <!-- 麵包屑 (Breadcrumb) start -->
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+              <li class="breadcrumb-item active" aria-current="page">常見問題</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="col-12 mb-5">
+          <h2 class="text-center">常見問題</h2>
+        </div>
+      </div>    
+      <!-- 麵包屑 (Breadcrumb) end -->  
+      <!-- faq start -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Q1. 我一定要成為會員，才能在官網中訂購商品嗎？
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>是的，為了保障您的權益，需要成為會員始能在官網購買商品，此外，成為會員才能享有購物行銷活動及累積S幣等優惠哦！</strong> 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Q2. 忘記密碼怎麼辦？ 
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  若您忘記密碼，請您先「會員登入」後，點選「忘記密碼」 再輸入註冊的電子郵件/手機號碼，系統會自動發送密碼重設通知給您，再請您依照通知步驟重新設定密碼即可。
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Q3. 該如何修改個人資料及密碼？
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>電腦版：請「會員登入」至「個人資料及密碼修改」即可進行變更。</p>
+                  <p>手機版/APP：請「會員登入」後至「個人」上方大頭照點選「姓名」後即可進行變更。</p>  
+                  <p>※ 如更新E-mail帳號，請留意新信箱是否可正常收取甜心蛋糕相關信件通知喔。</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Q4. 目前提供哪些付款方式？
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>目前提供付款方式有3種：</p>
+                  <p>1. 『分店取貨付款』</p>
+                  <p>2. 『信用卡』付款宅配到府（僅限台灣地區發行之VISA、Master Card、JCB信用卡）</p>
+                  <p>3. 宅配貨到付款（限台灣本島）</p>
+                  <p>※ 配合的宅配公司為：黑貓宅急便</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>   
+      <!-- faq end -->
+    </div>
+
+        <!-- 基本資料 start -->
+    <div class="contaioner">
+        <div class="row">
+          <div class="col-12 text-center">
+            <ul class="list-style-no">
+              <li><i class="bi bi-geo-alt"></i>台北市信義區信義路五段7號39樓</li>
+              <li><i class="bi bi-telephone"></i>(02) 2257 - 1166</li>
+              <li><i class="bi bi-envelope"></i>service@sosweet12.com</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+      <!-- 基本資料 end -->
+    <!-- Modal start-->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            您的購物車是空的
+          </div>
+          <div class="modal-footer">
+            <p>共 0 件商品</p>
+            <button type="button" class="btn btn-primary">查看購物車</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">會員</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        <div class="modal-body">
+          <form action="index.html" class="needs-validation" novalidate>
+            <h1 class="text-center">會員</h1>
+        <!-- 帳號 start-->
+            <div class="mb-3">
+              <label for="account" class="form-label">帳號</label>
+              <input type="text" id="account" name="account" class="form-control" placeholder="請輸入帳號" required>
+              <div class="invalid-feedback">
+              這是必填欄位
+              </div>
+            </div>
+        <!-- 帳號 end -->
+        <!-- 密碼 start-->
+            <div class="mb-3">
+              <label for="password" class="form-label">密碼</label>
+              <input type="password" id="password" name="password" class="form-control" placeholder="請輸入密碼" required>
+              <div class="invalid-feedback">
+               這是必填欄位
+              </div>
+            </div>
+        <!-- 密碼 end -->
+        <!-- 表單 checkbox start-->
+            <div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">記住我</label>
+              </div>
+            </div>
+        <!-- 表單 checkbox end-->
+        
+            <a href="javascript:;" class="float-end">忘記密碼</a>
+            <button href="javascript:;" type="submit" class="btn btn-primary form-control">登入</button>
+            <a href="javascript:;">註冊會員享首次購物優惠？立即行動！</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Modal end-->
+    
+    <!-- footer start -->
+    <footer class="footer text-center mt-auto py-3 bg-warning ">作業練習用_常見問題_非供商業使用</footer>
+    <!-- footer end -->
+    <a href="javacript:;" class="position-fixed position-alert bg-success bg-gradient text-white p-1 fs-5 text-decoration-none border border-dark rounded"><i class="bi bi-bell"></i>詐騙提醒</a>
+    <!-- bootstrap cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./js/validation.js"></script>
+  </body>
+</html>

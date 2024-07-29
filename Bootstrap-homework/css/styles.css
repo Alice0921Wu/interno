@@ -1,0 +1,27 @@
+.list-style-no {
+  list-style: none;  
+}
+
+.cart {
+  color:rgb(0, 213, 255);
+}
+.person {
+  color:orange;
+}
+.bg-cream {
+  background-color: rgb(250, 207, 193);
+}
+.bg-lightgreen {
+  background-color: rgb(171, 212, 171);
+}
+
+.position-alert {
+  bottom: 30px;
+  right: 0;
+}
+
+.img-center {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}

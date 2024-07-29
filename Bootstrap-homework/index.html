@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap作業練習用-index首頁</title>
+    <!-- bootstrap cdn css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="bg-white">
+    <!-- 導覽 start-->
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark bg-gradient fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html"><img src="img-cake/cake-logo.jpg" alt="" class="w-25 pe-2">甜心蛋糕</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 list-style-no">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="about.html">關於我們</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="product-list.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    產品列表
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="product-list.html">產品列表1</a></li>
+                    <li><a class="dropdown-item" href="product-list.html">產品列表2</a></li>
+                    <li><a class="dropdown-item" href="product-list.html">產品列表3</a></li>
+                    <li><a class="dropdown-item" href="product-list.html">產品列表4</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="store.html">門市店舖</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="faq.html">常見問題</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="contact.html">聯絡我們</a>
+                </li>
+              </ul>
+              
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success text-white" type="submit">Search</button>
+              </form>
+              <!-- 跳出購物車 -->
+              <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#cartModal">
+                <i class="bi bi-cart cart fs-3 ms-2"></i>
+              </a>
+              <!-- 跳出登入會員 -->
+              <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="bi bi-person person fs-3" ></i>
+              </a>
+            </div>
+          </div>
+    </nav>
+    <!-- 導覽 end-->
+
+    <div class="container pt-5">
+      <!-- 輪播 start -->
+      <div id="carouselExampleIndicators" class="carousel slide mt-5 mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img-cake/cake-t-10.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img-cake/cake-t-11.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img-cake/cake-t-12.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- 輪播 end -->
+      <!-- 最新消息 start -->
+      <div class="container mb-3 ">
+        <div class="row">
+          <h2 class="text-center mt-5 pt-3">最新產品</h2>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class=" rounded p-5">
+              <img class="w-100" src="img-cake/cake-01.jpg" alt="">
+            <p>綜合紅莓果蛋糕</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class=" rounded p-5">
+              <img class="w-100" src="img-cake/cake-02.jpg" alt="">
+            <p>芒果千層蛋糕</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class=" rounded p-5">
+              <img class="w-100" src="img-cake/cake-03.jpg" alt="">
+            <p>法國香緹水果蛋糕</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!-- 最新消息 end -->
+      <!-- 影片-start -->
+      <div class="bg-cream pt-2 pb-5">
+        <div class="container my-5">
+          <h2 class="text-center">影片分享</h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class=" col-md-6 ">
+              <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6kPCG0htU3c?si=fm5ty_kvgd9outzV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <p>員林 蜀葵花</p>
+            </div>
+            <div class="col-md-6 ">
+              <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mAEfTvuF8jY?si=N1MdtsrhHHvY0HE-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <p>大稻埕煙火</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 影片-end -->
+
+      <!-- 相關連結-start -->
+      <div class="bg-lightgreen pt-3 pb-5">
+        <div class="container my-5 ">
+          <h2 class="text-center">相關連結</h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3"><a href="about.html"><img class="w-100 rounded-circle" src="img-cake/link-01.jpg" alt=""></a></div>
+            <div class="col-6 col-md-2 mb-3"><a href="about.html"><img class="w-100 rounded-circle" src="img-cake/link-02.jpg" alt=""></a></div>
+            <div class="col-6 col-md-2 mb-3"><a href="about.html"><img class="w-100 rounded-circle" src="img-cake/link-03.jpg" alt=""></a></div>
+            <div class="col-6 col-md-2 mb-3"><a href="about.html"><img class="w-100 rounded-circle" src="img-cake/link-04.jpg" alt=""></a></div>
+            <div class="col-6 col-md-2 mb-3"><a href="about.html"><img class="w-100 rounded-circle" src="img-cake/link-05.jpg" alt=""></a></div>
+            <div class="col-6 col-md-2 mb-3"><a href="about.html"><img class="w-100 rounded-circle" src="img-cake/link-06.jpg" alt=""></a></div>
+          </div>
+        </div>
+      </div> 
+      <!-- 相關連結 end -->
+    </div>  
+    <div class="contaioner my-3 d-block d-sm-none">
+      <div class="row">
+        <div class="col-12 text-center">
+          <ul class="list-style-no">
+            <li><i class="bi bi-geo-alt"></i>台北市信義區信義路五段7號39樓</li>
+            <li><i class="bi bi-telephone"></i>(02) 2257 - 1166</li>
+            <li><i class="bi bi-envelope"></i>service@sosweet12.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+       
+    <!-- Modal start-->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            您的購物車是空的
+          </div>
+          <div class="modal-footer">
+            <p>共 0 件商品</p>
+            <button type="button" class="btn btn-primary">查看購物車</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">會員</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="index.html" class="needs-validation" novalidate>
+              <h1 class="text-center">會員</h1>
+        <!-- 帳號 start-->
+              <div class="mb-3">
+                <label for="account" class="form-label">帳號</label>
+                <input type="text" id="account" name="account" class="form-control" placeholder="請輸入帳號" required>
+                <div class="invalid-feedback">
+                這是必填欄位
+                </div>
+              </div>
+        <!-- 帳號 end -->
+        <!-- 密碼 start-->
+              <div class="mb-3">
+                <label for="password" class="form-label">密碼</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="請輸入密碼" required>
+                <div class="invalid-feedback">
+                這是必填欄位
+                </div>
+              </div>
+        <!-- 密碼 end -->
+        <!-- 表單 checkbox start-->
+              <div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">記住我</label>
+                </div>
+              </div>
+        <!-- 表單 checkbox end-->
+              <a href="javascript:;" class="float-end">忘記密碼</a>
+              <button href="javascript:;" type="submit" class="btn btn-primary form-control">登入</button>
+              <a href="javascript:;">註冊會員享首次購物優惠？立即行動！</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal end-->
+    
+    <!-- footer start -->
+    <footer class="footer text-center mt-auto py-3 bg-warning ">作業練習用_首頁_非供商業使用</footer>
+    <!-- footer end -->
+    <a href="javacript:;" class="position-fixed position-alert bg-success bg-gradient text-white p-1 fs-5 text-decoration-none border border-dark rounded"><i class="bi bi-bell"></i>詐騙提醒</a>
+    <!-- bootstrap cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./js/validation.js"></script>
+  </body>
+</html>

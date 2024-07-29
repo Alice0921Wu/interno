@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap作業練習用_contact聯絡我們</title>
+  <!-- bootstrap cdn css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
+</head>
+
+<body class="bg-white">
+  <!-- 導覽 start-->
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark bg-gradient fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="index.html"><img src="img-cake/cake-logo.jpg" alt="" class="w-25 pe-2">甜心蛋糕</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 list-style-no">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">關於我們</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              產品列表
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="product-list.html">產品列表1</a></li>
+              <li><a class="dropdown-item" href="product-list.html">產品列表2</a></li>
+              <li><a class="dropdown-item" href="product-list.html">產品列表3</a></li>
+              <li><a class="dropdown-item" href="product-list.html">產品列表4</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="store.html">門市店舖</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="faq.html">常見問題</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">聯絡我們</a>
+          </li>
+        </ul>
+        
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success text-white" type="submit">Search</button>
+        </form>
+        <!-- 跳出購物車 -->
+        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#cartModal">
+          <i class="bi bi-cart cart fs-3 ms-2"></i>
+        </a>
+        <!-- 跳出登入會員 -->
+        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="bi bi-person person fs-3" ></i>
+        </a>
+        
+        
+      </div>
+    </div>
+  </nav>
+  <!-- 導覽 end-->   
+  
+  <div class="container mt-5 mb-3 pt-5">
+    <!-- 麵包屑 (Breadcrumb) start -->
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+            <li class="breadcrumb-item active" aria-current="page">聯絡我們</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="col-12 mb-5">
+        <h2 class="text-center">聯絡我們</h2>
+      </div>
+    </div>
+    <!-- 麵包屑 (Breadcrumb) end --> 
+    <!-- contact start -->
+    <div class="row">
+      <form action="#" class="needs-validation" novalidate>
+        <div class="col-12 col-md-8 mx-auto">
+          <div class="mb-3">
+            <label for="" class="form-label">聯絡目的</label>
+            <select class="form-select" >
+              <option selected>客服專區</option>
+              <option value="1">加盟專區</option>
+              <option value="2">海外代理</option>
+              <option value="3">異業合作</option>
+              <option value="4">企業採購</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="account" class="form-label">姓名</label>
+            <input type="text" id="account" name="account" class="form-control" placeholder="請輸入姓名" required>
+          </div>
+          <div class="invalid-feedback">
+            這是必填欄位
+           </div>
+          <div class="mb-3">
+            <label for="mobile" class="form-label">連絡電話</label>
+            <input type="text" id="mobile" name="mobile"  class="form-control" placeholder="請輸入電話" pattern="[0-9]{4}-[0-9]{6}" required>
+            <div class="invalid-feedback">
+              這是必填欄位(格式為0900-000000)
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="name@example.com" required>
+            <div class="invalid-feedback">
+              這是必填欄位
+             </div>
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">消費門市</label>
+            <select class="form-select" >
+              <option selected>台北大安店</option>
+              <option value="1">台北南西店</option>
+              <option value="2">桃園青埔店</option>
+              <option value="3">新竹巨城店</option>
+              <option value="4">高雄巨蛋店</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="buyday" class="form-label">消費時間</label>
+            <input type="date" id="buyday" name="buyday" class="form-control" >
+          </div>
+          <div class="mb-3">
+            <label for="comment-title" class="form-label">主旨</label>
+            <input type="text" id="comment-title" name="comment-title" class="form-control" required>
+            <div class="invalid-feedback">
+              這是必填欄位
+             </div>
+          </div>
+          <div class="mb-3">
+            <label for="comment" class="form-label">內容</label>
+            <textarea class="form-control" id="comment" name="comment" rows="5" required></textarea>
+            <div class="invalid-feedback">
+              這是必填欄位
+             </div>
+          </div>
+          <div class="text-end"> 
+            <input class="btn btn-warning mb-5" type="submit" id="account" value="送出訊息">
+          </div>
+          
+        </div>
+      </form>
+    </div>
+    <!-- contact end -->
+  </div>
+    
+  <!-- 基本資料 start -->
+  <div class="contaioner">
+    <div class="row">
+      <div class="col-12 text-center">
+        <ul class="list-style-no">
+          <li><i class="bi bi-geo-alt"></i>台北市信義區信義路五段7號39樓</li>
+          <li><i class="bi bi-telephone"></i>(02) 2257 - 1166</li>
+          <li><i class="bi bi-envelope"></i>service@sosweet12.com</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 基本資料 end -->
+  
+
+  <!-- Modal start-->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          您的購物車是空的
+        </div>
+        <div class="modal-footer">
+          <p>共 0 件商品</p>
+          <button type="button" class="btn btn-primary">查看購物車</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">會員</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <form action="index.html" class="needs-validation" novalidate>
+        <h1 class="text-center">會員</h1>
+      <!-- 帳號 start-->
+        <div class="mb-3">
+          <label for="account" class="form-label">帳號</label>
+          <input  type="text" id="account" name="account" class="form-control" placeholder="請輸入帳號" required>
+          <div class="invalid-feedback">
+            這是必填欄位
+          </div>
+        </div>
+      <!-- 帳號 end -->
+      <!-- 密碼 start-->
+        <div class="mb-3">
+          <label for="password" class="form-label">密碼</label>
+          <input type="password" id="password" name="password" class="form-control" placeholder="請輸入密碼" required>
+          <div class="invalid-feedback">
+            這是必填欄位
+          </div>
+        </div>
+      <!-- 密碼 end -->
+      <!-- 表單 checkbox start-->
+      <div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">記住我</label>
+        </div>
+      </div>
+      <!-- 表單 checkbox end-->
+      
+      <a href="javascript:;" class="float-end">忘記密碼</a>
+      <button href="javascript:;" type="submit" class="btn btn-primary form-control">登入</button>
+      <a href="javascript:;">註冊會員享首次購物優惠？立即行動！</a>
+     </form>
+    </div>
+    
+  </div>
+  </div>
+  </div>
+  <!-- Modal end-->
+
+  <!-- footer start -->
+  <footer class="footer text-center mt-auto py-3 bg-warning ">作業練習用_聯絡我們_非供商業使用</footer>
+  <!-- footer end -->
+  <a href="javacript:;" class="position-fixed position-alert bg-success bg-gradient text-white p-1 fs-5 text-decoration-none border border-dark rounded"><i class="bi bi-bell"></i>詐騙提醒</a>
+  <!-- bootstrap cdn js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="./js/validation.js"></script>
+</body>
+</html>

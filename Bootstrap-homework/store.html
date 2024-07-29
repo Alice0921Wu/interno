@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap作業練習用_store門市店鋪</title>
+  <!-- bootstrap cdn css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
+</head>
+
+<body class="bg-white">
+  <!-- 導覽 start-->
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark bg-gradient fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="index.html"><img src="img-cake/cake-logo.jpg" alt="" class="w-25 pe-2">甜心蛋糕</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 list-style-no">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">關於我們</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              產品列表
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="product-list.html">產品列表1</a></li>
+              <li><a class="dropdown-item" href="product-list.html">產品列表2</a></li>
+              <li><a class="dropdown-item" href="product-list.html">產品列表3</a></li>
+              <li><a class="dropdown-item" href="product-list.html">產品列表4</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="store.html">門市店舖</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="faq.html">常見問題</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">聯絡我們</a>
+          </li>
+        </ul>
+        
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success text-white" type="submit">Search</button>
+        </form>
+        <!-- 跳出購物車 -->
+        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#cartModal">
+          <i class="bi bi-cart cart fs-3 ms-2"></i>
+        </a>
+        <!-- 跳出登入會員 -->
+        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="bi bi-person person fs-3" ></i>
+        </a>
+        
+        
+      </div>
+    </div>
+  </nav>
+  <!-- 導覽 end-->   
+  
+  <div class="container my-5 py-5">
+    <!-- 麵包屑 (Breadcrumb) start -->
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+            <li class="breadcrumb-item active" aria-current="page">門市店鋪</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="col-12">
+        <h2 class="text-center">門市店鋪</h2>
+      </div>
+    </div>
+    <!-- 麵包屑 (Breadcrumb) end --> 
+    <!-- stores start -->
+    <table class="table table-bordered mt-5">
+        <thead>
+          <tr>
+            <th>門市名稱</th>
+            <th>地址</th>
+            <th>電話</th>
+            <th>地圖</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>台北大安店</td>
+            <td>臺北市大安區和平東路一段6號</td>
+            <td>(02)2257-0918</td>
+            <td><a href="#" class="btn btn-primary btn-sm"><i class="bi bi-map"></i> View Map</a></td>
+          </tr>
+          <tr>
+            <td>台北南西店</td>
+            <td>台北市南京西路12號</td>
+            <td>(02)2257-1234</td>
+            <td><a href="#" class="btn btn-primary btn-sm"><i class="bi bi-map"></i> View Map</a></td>
+          </tr>
+          <tr>
+            <td>桃園青埔店</td>
+            <td>桃園市中壢區春德路189號2樓</td>
+            <td> (03) 273-8668</td>
+            <td><a href="#" class="btn btn-primary btn-sm"><i class="bi bi-map"></i> View Map</a></td>
+          </tr>
+          <tr>
+            <td>新竹巨城店</td>
+            <td>新竹市東區中央路229號</td>
+            <td> (03)623-8022</td>
+            <td><a href="#" class="btn btn-primary btn-sm"><i class="bi bi-map"></i> View Map</a></td>
+          </tr>
+          <tr>
+            <td>高雄巨蛋店</td>
+            <td>高雄市左營區博愛二路757 號</td>
+            <td> (07) 973-8168</td>
+            <td><a href="#" class="btn btn-primary btn-sm"><i class="bi bi-map"></i> View Map</a></td>
+          </tr>
+        </tbody>
+    </table>
+    <!-- stores end -->
+  </div>
+  <div class="contaioner">
+    <div class="row">
+      <div class="col-12 text-center">
+        <ul class="list-style-no">
+          <li><i class="bi bi-geo-alt"></i>台北市信義區信義路五段7號39樓</li>
+          <li><i class="bi bi-telephone"></i>(02) 2257 - 1166</li>
+          <li><i class="bi bi-envelope"></i>service@sosweet12.com</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Modal start-->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          您的購物車是空的
+        </div>
+        <div class="modal-footer">
+          <p>共 0 件商品</p>
+          <button type="button" class="btn btn-primary">查看購物車</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">會員</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <form action="index.html" class="needs-validation" novalidate>
+        <h1 class="text-center">會員</h1>
+      <!-- 帳號 start-->
+        <div class="mb-3">
+          <label for="account" class="form-label">帳號</label>
+          <input type="text" id="account" name="account" class="form-control" placeholder="請輸入帳號" required>
+          <div class="invalid-feedback">
+            這是必填欄位
+          </div>
+        </div>
+      <!-- 帳號 end -->
+      <!-- 密碼 start-->
+        <div class="mb-3">
+          <label for="password" class="form-label">密碼</label>
+          <input type="password" id="password" name="password" class="form-control" placeholder="請輸入密碼" required>
+          <div class="invalid-feedback">
+            這是必填欄位
+          </div>
+        </div>
+      <!-- 密碼 end -->
+      <!-- 表單 checkbox start-->
+      <div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">記住我</label>
+        </div>
+      </div>
+      <!-- 表單 checkbox end-->
+      
+      <a href="javascript:;" class="float-end">忘記密碼</a>
+      <button href="javascript:;" type="submit" class="btn btn-primary form-control">登入</button>
+      <a href="javascript:;">註冊會員享首次購物優惠？立即行動！</a>
+     </form>
+    </div>
+    
+  </div>
+  </div>
+  </div>
+  <!-- Modal end-->
+
+  <!-- footer start -->
+  <footer class="footer text-center mt-auto py-3 bg-warning ">作業練習用_門市店鋪_非供商業使用</footer>
+  <!-- footer end -->
+  <a href="javacript:;" class="position-fixed position-alert bg-success bg-gradient text-white p-1 fs-5 text-decoration-none border border-dark rounded"><i class="bi bi-bell"></i>詐騙提醒</a>
+  <!-- bootstrap cdn js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="./js/validation.js"></script>
+</body>
+</html>
